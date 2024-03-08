@@ -8,6 +8,7 @@
             height: 100%;
             margin: 0;
             display: flex;
+            flex-direction: column; /* Stack elements vertically */
             justify-content: center;
             align-items: center;
             background-color: #000000; /* Light grey background */
@@ -16,12 +17,25 @@
             font-size: 10vw; /* Responsive font size */
             font-family: Arial, sans-serif;
             color: #e51c17; /* Dark grey color */
+            flex-grow: 1; /* Allow this item to grow and push the footer down */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tiny-text {
+            font-size: 0.5vw; /* Extremely tiny font size */
+            font-family: Arial, sans-serif;
+            color: white; /* Lighter grey color */
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px; /* Margin at the bottom */
         }
     </style>
 </head>
 <body>
 
 <div class="centered-text">YES</div>
+<div class="tiny-text">we will update if it changes</div>
 
 </body>
 </html>
